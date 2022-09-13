@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name        Useful Forks
 // @author      payne911, odnar-dev
-// @version     1.7
+// @version     1.8
 // @license     MIT
 // @namespace   https://github.com/community-plugins/Userscripts
 // @description Displays GitHub forks ordered by stars, and with additional information and automatic filters.
@@ -371,5 +371,5 @@ init();
 
 //When navigating between Insights pages, URL is manipulated through PJAX.
 document.addEventListener('pjax:end', init);
-
+document.addEventListener('turbo:render', init);
 })();
